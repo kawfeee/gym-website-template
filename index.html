@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaif fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/blackbg.jpg");
+        color: white;
+        background-repeat: no-repeat;
+        background-size: 2000px 1333px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid rgb(33, 228, 52); */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgb(225, 255, 1); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 26px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .btn {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 0px 9px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(58, 58, 58);
+        padding: 8px 24px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 109px 105px;
+        padding: 52px 30px;
+        width: 33%;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+
+    .formgroup {
+        /* text-align: center; */
+        /* display: block; */
+        width: 34%;
+        margin: 10px 0px;
+        padding: 4px 8px;
+        /* border: 2px solid black; */
+
+    }
+
+    .formgroup input {
+        font-family: 'Fira Sans', sans-serif;
+        width: 233px;
+        margin: 4px -1px;
+        padding: 0px 7px;
+        font-size: 24px;
+        border-radius: 7px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo2.jpg" alt="">
+            <div>Kaif fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Email us</button>
+            <button class="btn">Location</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Bangalore now!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                name: <input type="text" name="" placeholder="Enter here....">
+            </div>
+            <div class="formgroup">
+                Age: <input type="text" name="" placeholder="Enter here....">
+            </div>
+            <div class="formgroup">
+                Gender: <input type="text" name="" placeholder="Enter here....">
+            </div>
+            <div class="formgroup">
+                Phone no: <input type="text" name="" placeholder="Enter here....">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
